@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/* Generelles Styling für das Html Dokument */
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/* Ende vom generellen Styling für das Html Dokument */
+
+
+/* Styling für das Navigation Menu */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 80px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(128, 128, 128, 0.671);
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #000000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.nav-links a {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.nav-links a:hover {
+  background-color: lightgray;
+  padding: 7px 13px;
+  border-radius: 5px;
+  color: rgb(54, 52, 52);
+  transition: .3s ease;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 27px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+/* Ende vom stylen für das Navigation Menu */
+
+
+/* Styling für das 1.Bild */
+.header {
+  background: url('https://www.orangesmile.com/common/img_cities_original/herat-nobo105-5.jpg') no-repeat center/cover;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+/* Ende vom Stylen des Navigation-Menu */
+
+
+/* Styling für die Hello Section */
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: absolute;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+  animation-delay: 1s;
+}
+
+.kabul, .afghanistan, .dss {
+  left: 15%;
+}
+
+.kabul {
+  top: 28%;
+}
+
+.afghanistan {
+  top: 45%;
+}
+
+.dss {
+  top: 62%;
+}
+
+#hero h1:nth-child(1) {
+  animation-delay: 1s;
+}
+#hero h1:nth-child(2) {
+  animation-delay: 2s;
+}
+#hero h1:nth-child(3) {
+  animation: text_reveal_name .5s ease forwards;
+  animation-delay: 3s;
+}
+/* Ende fürs stylen von der Hello Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links a {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    width: 100%;
+    top: 80px;
+    background-color: rgba(128, 128, 128, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform 0.7s ease-in;
+  }
+
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #hero h1 {
+    display: none;
+  }
+}
+
+.nav-active {
+  transform: translate(0%);
+}
+
+
+/* Animation für das Burger-Menu */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+/* Ende für die Animation vom Burger-Menu */
+
+
+/* Styling für das Toggle */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+/* Ende fürs stylen vom Toggle */
+
+
+/* Keyframes für die animation in h1 */
+@keyframes text_reveal_box {
+  50% {
+      width: 100%;
+      left: 0;
+  }
+
+  100% {
+      width: 0;
+      left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+      color: black;
+      background-color: rgba(173, 216, 230, 0.8);
+      padding: 10px 15px;
+      border-radius: 10px;
+  }
+}
+
+@keyframes text_reveal_name {
+  100% {
+      color: darkgreen;
+      font-weight: 500px;
+      background-color: rgba(173, 216, 230, 0.8);
+      padding: 10px 15px;
+      border-radius: 10px;
+  }
+}
+/* Ende von den Keyframes für die animation in h1 */
