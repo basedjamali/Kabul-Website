@@ -16,6 +16,21 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 500;
+  color: goldenrod;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+hr {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+}
 /* Ende vom generellen Styling für das Html Dokument */
 
 
@@ -24,9 +39,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 80px;
+  min-height: 70px;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(128, 128, 128, 0.671);
+  background-color: rgb(0, 161, 215);
   position: fixed;
   width: 100%;
 }
@@ -36,13 +51,14 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 2.5rem;
-  text-shadow: 0 0 10px #000000;
+  text-shadow: 0 0 10px black;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  margin-bottom: 20px;
 }
 
 .nav-links a {
@@ -75,8 +91,8 @@ nav {
 
 
 /* Styling für das 1.Bild */
-.header {
-  background: url('https://www.orangesmile.com/common/img_cities_original/herat-nobo105-5.jpg') no-repeat center/cover;
+.kabul-img {
+  margin-top: 40px;
   object-fit: cover;
   height: 100vh;
   width: 100%;
@@ -84,76 +100,65 @@ nav {
 /* Ende vom Stylen des Navigation-Menu */
 
 
-/* Styling für die Hello Section */
-#hero h1 {
-  display: block;
-  width: fit-content;
-  font-size: 4rem;
-  position: absolute;
-  color: transparent;
-  animation: text_reveal .5s ease forwards;
-  animation-delay: 1s;
+/* Styling für die About-Section */
+#about {
+  margin-top: 100px;
 }
 
-.kabul, .afghanistan, .dss {
-  left: 15%;
+h2 {
+  text-align: center;
+  color: darkslategray;
+  font-weight: 500;
 }
 
-.kabul {
-  top: 28%;
+.kabul-people {
+  float: right;
+  margin: 100px 60px;
+  border-radius: 20px;
+  width: 500px;
 }
 
-.afghanistan {
-  top: 45%;
+.sub-head {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: green;
 }
 
-.dss {
-  top: 62%;
+.kabul-infos {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 40px;
+  margin-top: 100px;
 }
 
-#hero h1:nth-child(1) {
-  animation-delay: 1s;
+li {
+  margin-top: 25px;
 }
-#hero h1:nth-child(2) {
-  animation-delay: 2s;
+
+.infos {
+  line-height: 50px;
 }
-#hero h1:nth-child(3) {
-  animation: text_reveal_name .5s ease forwards;
-  animation-delay: 3s;
-}
-/* Ende fürs stylen von der Hello Section */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Ende vom Styling für die About-Section */
 
 
 /* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .infos {
+    margin-right: 25px;
+  }
+}
+
+
 @media only screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -175,10 +180,10 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
+    height: 100vh;
     width: 100%;
-    top: 80px;
-    background-color: rgba(128, 128, 128, 0.7);
+    top: 70px;
+    background-color: rgb(0, 161, 215);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,9 +200,28 @@ nav {
     cursor: pointer;
   }
 
-  #hero h1 {
-    display: none;
+  .kabul-people {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 45%;
   }
+
+  .sub-head {
+    font-size: 1.2rem;
+  }
+
+  .kabul-infos {
+    font-size: 1.1rem;
+    margin-top: 50px;
+  }
+
+  .infos {
+    line-height: 40px;
+  }
+  
+
 }
 
 .nav-active {
@@ -232,37 +256,3 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 /* Ende fürs stylen vom Toggle */
-
-
-/* Keyframes für die animation in h1 */
-@keyframes text_reveal_box {
-  50% {
-      width: 100%;
-      left: 0;
-  }
-
-  100% {
-      width: 0;
-      left: 100%;
-  }
-}
-
-@keyframes text_reveal {
-  100% {
-      color: black;
-      background-color: rgba(173, 216, 230, 0.8);
-      padding: 10px 15px;
-      border-radius: 10px;
-  }
-}
-
-@keyframes text_reveal_name {
-  100% {
-      color: darkgreen;
-      font-weight: 500px;
-      background-color: rgba(173, 216, 230, 0.8);
-      padding: 10px 15px;
-      border-radius: 10px;
-  }
-}
-/* Ende von den Keyframes für die animation in h1 */
