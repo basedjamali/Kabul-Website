@@ -21,15 +21,22 @@ body {
   font-size: 4rem;
   font-weight: 500;
   color: goldenrod;
-  margin-bottom: 10px;
+  margin: 0 10px 10px 10px;
   text-transform: uppercase;
   text-align: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: darkslategray;
+  font-weight: 600;
+  margin: 0 5px 0 5px;
 }
 
 hr {
   width: 90%;
-  margin-left: 5%;
-  margin-top: 10px;
+  margin: 50px 0 90px 5%;
 }
 /* Ende vom generellen Styling für das Html Dokument */
 
@@ -105,24 +112,11 @@ nav {
   margin-top: 100px;
 }
 
-h2 {
-  text-align: center;
-  color: darkslategray;
-  font-weight: 500;
-}
-
 .kabul-people {
   float: right;
   margin: 100px 60px;
   border-radius: 20px;
   width: 500px;
-}
-
-.sub-head {
-  font-size: 1.7rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: green;
 }
 
 .kabul-infos {
@@ -136,26 +130,131 @@ li {
   margin-top: 25px;
 }
 
-.infos {
+.about-infos {
   line-height: 50px;
 }
 
 /* Ende vom Styling für die About-Section */
 
 
-/* Responsive Design */
+/* Styling für die History-Section */
+.subhead {
+  color: lightblue;
+  margin: 10px 0 10px 25px;
+  text-decoration: underline;
+}
+
+.history-infos {
+  font-size: 1.5rem;
+  line-height: 40px;
+  background-color: darkslategray;
+  margin: 50px 40px;
+  padding: 20px 15px;
+  border-radius: 20px;
+  color: white;
+}
+
+.info-gen {
+  text-align: left;
+  margin: 0 25px 50px 25px;
+}
+
+.link-color {
+  color: rgb(0, 191, 255);
+}
+
+.link-color:visited {
+  color: yellow;
+}
+/* Ende vom Styling für die History-Section */
+
+
+/* Styling für die Sights-Section */
+.sight1 {
+  margin-top: 60px;
+}
+
+mark {
+  padding: 5px 10px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-left: 70px;
+  color: darkslategray;
+}
+
+.dap-img, .pkm-img1, .bbp-img1 {
+  margin: 50px 10px 20px 70px;
+  border-radius: 20px;
+}
+
+.dap-img2, .pkm-img2, .bbp-img2 {
+  margin: -10px 10px 20px 20px;
+  border-radius: 20px;
+}
+
+.dap-img {
+  width: 40%;
+}
+
+.dap-img2 {
+  width: 44.5%;
+}
+
+.sight-info {
+  font-size: 1.3rem;
+  margin: 10px 70px 100px 70px;
+  line-height: 35px;
+}
+
+.pkm-img1 {
+  width: 45%;
+}
+
+.pkm-img2 {
+  width: 41.5%;
+}
+
+.bbp-img1 {
+  width: 45%;
+}
+
+.bbp-img2 {
+  width: 44%;
+}
+/* Ende vom Styling für die Sights-Section */
+
+/* Responsive Design und Animationen */
 @media only screen and (max-width: 600px) {
+  .nav-links {
+    font-size: 1rem;
+  }
+
   .section-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
-  .infos {
-    margin-right: 25px;
+  .kabul-people {
+    display: none;
   }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-left: 10%;
+    margin-bottom: 1%;
+  }
+
+  .sight-info {
+    font-size: 1.1rem;
+    margin: 10px 3% 100px 3%;
+    line-height: 30px;
+  }
+
 }
 
 
@@ -171,18 +270,15 @@ li {
   }
 
   .nav-links a {
-    color: white;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 23px;
+    font-size: 1.2rem;
   }
 
   .nav-links {
     position: absolute;
     right: 0px;
     height: 100vh;
-    width: 100%;
-    top: 70px;
+    width: 50%;
+    top: 20px;
     background-color: rgb(0, 161, 215);
     display: flex;
     flex-direction: column;
@@ -201,27 +297,46 @@ li {
   }
 
   .kabul-people {
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    margin: 50px 30px 20px 30px;
     width: 45%;
   }
 
-  .sub-head {
-    font-size: 1.2rem;
-  }
-
   .kabul-infos {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 50px;
+    line-height: 15px;
   }
 
-  .infos {
-    line-height: 40px;
+  .about-infos {
+    line-height: 30px;
+    margin-right: 25px;
+  }
+
+  .history-infos {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+
+  .subhead {
+    font-size: 1.2rem;
+    margin-right: 25px;
+  }
+
+  .dap-img, .pkm-img1, .bbp-img1 {
+    width: 80%;
+    margin: 7% 10% 30px 10%;
+    border-radius: 15px;
+  }
+
+  .dap-img2, .pkm-img2, .bbp-img2 {
+    display: none;
   }
   
-
+  .sight-info {
+    font-size: 1.1rem;
+    margin: 10px 10% 100px 10%;
+    line-height: 30px;
+  }
 }
 
 .nav-active {
@@ -241,7 +356,6 @@ li {
   }
 }
 /* Ende für die Animation vom Burger-Menu */
-
 
 /* Styling für das Toggle */
 .toggle .line1 {
