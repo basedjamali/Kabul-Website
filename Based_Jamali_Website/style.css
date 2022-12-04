@@ -48,7 +48,7 @@ nav {
   align-items: center;
   min-height: 70px;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(0, 161, 215);
+  background-color: rgba(0, 161, 215);
   position: fixed;
   width: 100%;
 }
@@ -99,7 +99,6 @@ nav {
 
 /* Styling für das 1.Bild */
 .kabul-img {
-  margin-top: 40px;
   object-fit: cover;
   height: 100vh;
   width: 100%;
@@ -109,6 +108,11 @@ nav {
 
 /* Styling für die About-Section */
 #about {
+  margin-top: -5px;
+}
+
+
+#über {
   margin-top: 100px;
 }
 
@@ -225,6 +229,82 @@ h3 {
 }
 /* Ende vom Styling für die Sights-Section */
 
+/* Styling für das Scroll-Bar */
+/* Source Code: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(153, 153, 153);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Ende vom Styling für das Scroll-Bar */
+
+/* Styling für die Footer Section*/
+#footer {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .footer {
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.brand {
+  color: gold;
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#footer .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+#footer .social-item .github {
+  width: 50px;
+}
+
+#footer p {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+/* Ende vom Styling für die Footer Section*/
+
 /* Responsive Design und Animationen */
 @media only screen and (max-width: 600px) {
   .nav-links {
@@ -253,6 +333,18 @@ h3 {
     font-size: 1.1rem;
     margin: 10px 3% 100px 3%;
     line-height: 30px;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+  
+  #footer h2 {
+    font-size: 1.3rem;
+  }
+
+  #footer p {
+    font-size: 0.8rem;
   }
 
 }
