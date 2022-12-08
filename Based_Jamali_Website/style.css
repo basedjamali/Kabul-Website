@@ -311,18 +311,6 @@ h3 {
     font-size: 1rem;
   }
 
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.1rem;
-  }
-
-  .kabul-people {
-    display: none;
-  }
-
   h3 {
     font-size: 1.1rem;
     margin-left: 10%;
@@ -349,6 +337,11 @@ h3 {
 
 }
 
+@media only screen and (max-width: 849px) {
+  .kabul-people {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .nav-links {
@@ -388,10 +381,14 @@ h3 {
     cursor: pointer;
   }
 
-  .kabul-people {
-    margin: 50px 30px 20px 30px;
-    width: 45%;
+  .section-title {
+    font-size: 2.5rem;
   }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
 
   .kabul-infos {
     font-size: 1rem;
