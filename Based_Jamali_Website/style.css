@@ -48,7 +48,7 @@ nav {
   align-items: center;
   min-height: 70px;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgba(0, 161, 215);
+  background-color: rgba(255, 148, 72, 0.97);
   position: fixed;
   width: 100%;
 }
@@ -364,7 +364,7 @@ h3 {
     height: 100vh;
     width: 50%;
     top: 20px;
-    background-color: rgb(0, 161, 215);
+    background-color: rgba(255, 148, 72, 0.97);
     display: flex;
     flex-direction: column;
     align-items: center;
