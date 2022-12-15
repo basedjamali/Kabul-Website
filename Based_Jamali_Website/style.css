@@ -76,10 +76,10 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: lightgray;
+  background-color: rgb(255, 98, 41);
   padding: 7px 13px;
   border-radius: 5px;
-  color: rgb(54, 52, 52);
+  color: white;
   transition: .3s ease;
 }
 
@@ -120,7 +120,7 @@ nav {
   float: right;
   margin: 100px 60px;
   border-radius: 20px;
-  width: 500px;
+  width: 600px;
 }
 
 .kabul-infos {
@@ -337,17 +337,39 @@ h3 {
 
 }
 
-@media only screen and (max-width: 849px) {
-  .kabul-people {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
   }
+
+  .kabul-people {
+    width: 500px;
+    margin-bottom: 10px;
+  }
 }
+
+@media only screen and (max-width: 876px) {
+  .kabul-people {
+    width: 400px;
+    margin-left: 30px;
+  }
+
+  .kabul-infos {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 782px) {
+  .kabul-people {
+    display: none;
+  }
+
+  .kabul-infos {
+    font-size: 1.4rem;
+    margin-right: 30px;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   body {
@@ -391,7 +413,7 @@ h3 {
 
 
   .kabul-infos {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 50px;
     line-height: 15px;
   }
