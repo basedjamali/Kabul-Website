@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -72,7 +73,7 @@ nav {
   color: white;
   letter-spacing: 1px;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .nav-links a:hover {
@@ -98,7 +99,8 @@ nav {
 
 
 /* Styling für das 1.Bild */
-.kabul-img {
+.image {
+  background: url('kabul-bg2.png') no-repeat center/cover;
   object-fit: cover;
   height: 100vh;
   width: 100%;
@@ -108,9 +110,8 @@ nav {
 
 /* Styling für die About-Section */
 #about {
-  margin-top: -5px;
+  margin-top: 0px;
 }
-
 
 #über {
   margin-top: 100px;
@@ -118,20 +119,23 @@ nav {
 
 .kabul-people {
   float: right;
-  margin: 100px 60px;
+  margin: 97px 60px 20px 60px;
   border-radius: 20px;
-  width: 600px;
+  width: 45%;
 }
 
 .kabul-infos {
   text-align: left;
   font-size: 1.5rem;
-  margin-left: 40px;
-  margin-top: 100px;
+  margin: 100px 40px 0 40px;
 }
 
 li {
   margin-top: 25px;
+}
+
+.gen-infos {
+  line-height: 30px;
 }
 
 .about-infos {
@@ -188,45 +192,18 @@ h3 {
   color: darkslategray;
 }
 
-.dap-img, .pkm-img1, .bbp-img1 {
-  margin: 50px 10px 20px 70px;
-  border-radius: 20px;
-}
-
-.dap-img2, .pkm-img2, .bbp-img2 {
-  margin: -10px 10px 20px 20px;
-  border-radius: 20px;
-}
-
-.dap-img {
-  width: 40%;
-}
-
-.dap-img2 {
-  width: 44.5%;
-}
-
 .sight-info {
   font-size: 1.3rem;
   margin: 10px 70px 100px 70px;
   line-height: 35px;
 }
 
-.pkm-img1 {
+.dap-img, .pkm-img1, .bbp-img1 {
+  margin: 40px 28% 30px 28%;
+  border-radius: 20px;
   width: 45%;
 }
 
-.pkm-img2 {
-  width: 41.5%;
-}
-
-.bbp-img1 {
-  width: 45%;
-}
-
-.bbp-img2 {
-  width: 44%;
-}
 /* Ende vom Styling für die Sights-Section */
 
 /* Styling für das Scroll-Bar */
@@ -234,6 +211,7 @@ h3 {
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 /* Track */
@@ -306,60 +284,17 @@ h3 {
 /* Ende vom Styling für die Footer Section*/
 
 /* Responsive Design und Animationen */
-@media only screen and (max-width: 600px) {
-  .nav-links {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-    margin-left: 10%;
-    margin-bottom: 1%;
-  }
-
-  .sight-info {
-    font-size: 1.1rem;
-    margin: 10px 3% 100px 3%;
-    line-height: 30px;
-  }
-
-  .brand {
-    font-size: 1.1rem;
-  }
-  
-  #footer h2 {
-    font-size: 1.3rem;
-  }
-
-  #footer p {
-    font-size: 0.8rem;
-  }
-
-}
-
 @media only screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
   }
 
   .kabul-people {
-    width: 500px;
     margin-bottom: 10px;
   }
 }
 
-@media only screen and (max-width: 876px) {
-  .kabul-people {
-    width: 400px;
-    margin-left: 30px;
-  }
-
-  .kabul-infos {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (max-width: 782px) {
+@media only screen and (max-width: 799px) {
   .kabul-people {
     display: none;
   }
@@ -385,7 +320,7 @@ h3 {
     right: 0px;
     height: 100vh;
     width: 50%;
-    top: 20px;
+    top: 15px;
     background-color: rgba(255, 148, 72, 0.97);
     display: flex;
     flex-direction: column;
@@ -424,23 +359,20 @@ h3 {
   }
 
   .history-infos {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 30px;
+    margin: 50px 25px;
   }
 
   .subhead {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     margin-right: 25px;
   }
 
   .dap-img, .pkm-img1, .bbp-img1 {
     width: 80%;
-    margin: 7% 10% 30px 10%;
+    margin: 7% 7% 30px 9%;
     border-radius: 15px;
-  }
-
-  .dap-img2, .pkm-img2, .bbp-img2 {
-    display: none;
   }
   
   .sight-info {
@@ -449,6 +381,42 @@ h3 {
     line-height: 30px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-left: 10%;
+    margin-bottom: 1%;
+  }
+
+  .sight-info {
+    font-size: 1.1rem;
+    margin: 10px 7% 100px 7%;
+    line-height: 30px;
+  }
+
+  .about-infos {
+    margin-right: 3%;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+  
+  #footer h2 {
+    font-size: 1.3rem;
+  }
+
+  #footer p {
+    font-size: 0.8rem;
+  }
+
+}
+
 
 .nav-active {
   transform: translate(0%);
