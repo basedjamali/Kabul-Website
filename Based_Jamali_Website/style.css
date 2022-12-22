@@ -35,7 +35,7 @@ h2 {
   margin: 0 5px 0 5px;
 }
 
-hr {
+#about, #history, #sights, #companies {
   width: 90%;
   margin: 50px 0 90px 5%;
 }
@@ -54,11 +54,15 @@ nav {
   width: 100%;
 }
 
+.kabul {
+  color: white;
+}
+
 .logo {
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-shadow: 0 0 10px black;
 }
 
@@ -66,7 +70,6 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 40%;
-  margin-bottom: 20px;
 }
 
 .nav-links a {
@@ -130,7 +133,7 @@ nav {
   margin: 100px 40px 0 40px;
 }
 
-li {
+.important-infos {
   margin-top: 25px;
 }
 
@@ -203,8 +206,79 @@ h3 {
   border-radius: 20px;
   width: 45%;
 }
-
 /* Ende vom Styling für die Sights-Section */
+
+
+/* Styling für die Others Section */
+#company {
+  margin-bottom: 100px;
+}
+
+.other-line {
+  width: 82%;
+  margin: 60px 0 0 10%;
+}
+
+.aib-img, .bma-img {
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
+  margin: 50px 0 0 10%;
+}
+
+.AzBa-img {
+  width: 600px;
+  height: 450px;
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  margin: 50px 0 10px 48%;
+}
+
+.companie-1, .companie-2, .companie-3 {
+  font-size: 2rem;
+}
+
+.companie-1, .companie-3 {
+  margin: -450px 0 0 650px;
+}
+
+.companie-2 {
+  margin: -460px 0 0 135px;
+}
+
+.aib-head, .azizi-bank, .banke-millie-afghan {
+  background-color: lightgray;
+  padding: 15px;
+  width: 600px;
+  font-weight: bold;
+}
+
+.azizi-bank {
+  width: 450px;
+}
+
+.aib-infos, .AzBa-infos, .bma-infos {
+  background-color: rgb(183, 183, 183);
+  width: 600px;
+  height: 377px;
+  padding: 35px 30px 35px 20px;
+}
+
+.aib-infos, .bma-infos {
+  font-size: 1.7rem;
+}
+
+.AzBa-infos {
+  width: 450px;
+  font-size: 1.55rem;
+}
+
+.aib-info, .AzBa-info, .bma-infos {
+  color: white;
+  font-weight: 500;
+  line-height: 50px;
+}
+/* Ende vom Styling für die Others Section */
 
 /* Styling für das Scroll-Bar */
 /* Source Code: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
@@ -345,7 +419,6 @@ h3 {
   h2 {
     font-size: 1.1rem;
   }
-
 
   .kabul-infos {
     font-size: 1.2rem;
