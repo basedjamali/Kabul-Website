@@ -277,6 +277,7 @@ button {
   border: none;
   background-color: lightgray;
   margin: 0px 0 80px 7%;
+  cursor: pointer;
 }
 
 .github1 {
