@@ -100,13 +100,12 @@ nav {
 }
 /* Ende vom stylen für das Navigation Menu */
 
-
 /* Styling für das 1.Bild */
 .image {
   background: url('kabul-bg2.png') no-repeat center/cover;
   object-fit: cover;
-  height: 100vh;
-  width: 100%;
+  height: 102vh;
+  width: 101%;
 }
 /* Ende vom Stylen des Navigation-Menu */
 
@@ -203,82 +202,94 @@ h3 {
 
 .dap-img, .pkm-img1, .bbp-img1 {
   margin: 40px 28% 30px 28%;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* Ende vom Styling für die Sights-Section */
 
 
-/* Styling für die Others Section */
+/* Styling für die Company Section */
 #company {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-.other-line {
-  width: 82%;
-  margin: 60px 0 0 10%;
+.all-companies {
+  display: flex;
 }
 
-.aib-img, .bma-img {
-  width: 450px;
-  height: 450px;
-  border-radius: 15px;
-  margin: 50px 0 0 10%;
+.companies1, .companies2 {
+  background-color: rgb(121, 195, 255);
+  padding: 35px 20px 15px 20px;
+  margin: 50px 5% 5% 5%;
+  width: 40%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.AzBa-img {
-  width: 600px;
-  height: 450px;
-  border-radius: 15px;
-  border: 1px solid lightgray;
-  margin: 50px 0 10px 48%;
+.companies1 {
+  margin-left: 7%;
 }
 
-.companie-1, .companie-2, .companie-3 {
-  font-size: 2rem;
+.companies2 {
+  margin-left: 1%;
 }
 
-.companie-1, .companie-3 {
-  margin: -450px 0 0 650px;
+.company-1, .company-2 {
+  font-size: 1.5rem;
+  margin: 1% 4%;
 }
 
-.companie-2 {
-  margin: -460px 0 0 135px;
-}
-
-.aib-head, .azizi-bank, .banke-millie-afghan {
-  background-color: lightgray;
-  padding: 15px;
-  width: 600px;
+.comp-head {
+  background-color: rgb(227, 227, 191);
   font-weight: bold;
+  padding: 15px 0 15px 20px;
+  border: 1px solid darkslategray;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.2rem;
 }
 
-.azizi-bank {
-  width: 450px;
+.comp-infos {
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 230);
+  height: 330px;
+  font-size: 1.1rem;
+  border: 1px solid darkslategray;
+  width: 100%;
 }
 
-.aib-infos, .AzBa-infos, .bma-infos {
-  background-color: rgb(183, 183, 183);
-  width: 600px;
-  height: 377px;
-  padding: 35px 30px 35px 20px;
+.comp-info {
+  margin: 5%;
+}
+/* Ende vom Styling für die Company Section */
+
+/* Styling für den Source Code Button*/
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 5px 50px 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: lightgray;
+  margin: 0px 0 80px 7%;
 }
 
-.aib-infos, .bma-infos {
-  font-size: 1.7rem;
+.github1 {
+  width: 40px;
+  margin-top: 3px;
+  margin-left: -120px;
 }
 
-.AzBa-infos {
-  width: 450px;
-  font-size: 1.55rem;
+.source-code {
+  margin: -30px 0 10px 50px;
 }
+/* Ende vom Styling für den Source Code Button*/
 
-.aib-info, .AzBa-info, .bma-infos {
-  color: white;
-  font-weight: 500;
-  line-height: 50px;
-}
-/* Ende vom Styling für die Others Section */
 
 /* Styling für das Scroll-Bar */
 /* Source Code: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
@@ -308,6 +319,7 @@ h3 {
 /* Styling für die Footer Section*/
 #footer {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  width: 101%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -315,6 +327,7 @@ h3 {
 
 #footer .footer {
   min-height: 200px;
+  width: 100%;
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 10px;
@@ -378,7 +391,6 @@ h3 {
     margin-right: 30px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   body {
@@ -453,6 +465,25 @@ h3 {
     margin: 10px 10% 100px 10%;
     line-height: 30px;
   }
+
+  .all-companies {
+    flex-direction: column;
+  }
+  
+  .companies1, .companies2 {
+    width: 85%;
+    height: 430px;
+    margin-left: 7.5%;
+    padding-top: 30px;
+  }
+
+  .companies2 {
+    margin-top: 1%;
+  }
+
+  .comp-infos {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -488,13 +519,41 @@ h3 {
     font-size: 0.8rem;
   }
 
-}
+  .companies1, .companies2 {
+    height: 460px;
+    margin-bottom: 10%;
+  }
 
+  .comp-head {
+    font-size: 1.2rem;
+  }
+
+  .comp-info {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  button {
+    width: 170px;
+    height: 25px;
+    font-size: .9rem;
+    padding: 3px 10px 50px 3px;
+  }
+
+  .github1 {
+    width: 35px;
+    margin-left: -90px;
+    margin-top: 5px;
+  }
+  
+  .source-code {
+    margin: -27px 0 10px 50px;
+  }
+}
 
 .nav-active {
   transform: translate(0%);
 }
-
 
 /* Animation für das Burger-Menu */
 @keyframes navLinkFade {
