@@ -142,7 +142,7 @@ nav {
 
 .about-infos {
   margin-top: 30px;
-  line-height: 50px;
+  line-height: 45px;
 }
 
 /* Ende vom Styling für die About-Section */
@@ -215,28 +215,25 @@ h3 {
   margin-bottom: 50px;
 }
 
-.all-companies {
+.comp_1-2, .comp_3-4 {
   display: flex;
 }
 
-.companies1, .companies2 {
+.companies1, .companies2, .companies3, .companies4 {
   background-color: rgb(121, 195, 255);
+  margin: 50px 3% 40px 7%;
   padding: 35px 20px 15px 20px;
-  margin: 50px 5% 5% 5%;
   width: 40%;
+  height: 470px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.companies1 {
-  margin-left: 7%;
+.companies2, .companies4 {
+  margin-left: 3%;
 }
 
-.companies2 {
-  margin-left: 1%;
-}
-
-.company-1, .company-2 {
+.company_2 {
   font-size: 1.5rem;
   margin: 1% 4%;
 }
@@ -277,7 +274,7 @@ button {
   border-radius: 10px;
   border: none;
   background-color: lightgray;
-  margin: 0px 0 80px 7%;
+  margin: 0px 0 80px 7.3%;
   cursor: pointer;
 }
 
@@ -381,6 +378,10 @@ button {
   .kabul-people {
     margin-bottom: 10px;
   }
+
+  .comp-head {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 799px) {
@@ -471,15 +472,19 @@ button {
   .all-companies {
     flex-direction: column;
   }
+
+  .comp_1-2, .comp_3-4 {
+    flex-direction: column;
+  }
   
-  .companies1, .companies2 {
+  .companies1, .companies2, .companies3, .companies4 {
     width: 85%;
     height: 430px;
     margin-left: 7.5%;
     padding-top: 30px;
   }
 
-  .companies2 {
+  .companies2, .companies3, .companies4 {
     margin-top: 1%;
   }
 
@@ -550,6 +555,30 @@ button {
   
   .source-code {
     margin: -27px 0 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .companies1, .companies2, .companies3, .companies4 {
+    height: 490px;
+  }
+
+  .comp-head {
+    font-size: 1rem;
+  }
+
+  .comp-infos {
+    height: 340px;
+  }
+}
+
+@media only screen and (max-width: 289px) {
+  .companies1, .companies2, .companies3, .companies4 {
+    height: 520px;
+  }
+
+  .comp-infos {
+    height: 375px;
   }
 }
 
